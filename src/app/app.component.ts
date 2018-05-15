@@ -14,13 +14,16 @@ import {LOCAL_STORAGE,WebStorageService} from 'angular-webstorage-service';
 export class AppComponent {
 
   title = 'app';
-  public data: any=[];
-  public studentdetails={FirstName:"",LastName:"",mailid:"",Password:"",DOB:"",Gender:""}
-  constructor(private connect:StoreService, private router:Router,@Inject(LOCAL_STORAGE) private storage:WebStorageService ){
+  // public data: any=[];
+  // public studentdetails={FirstName:"",LastName:"",mailid:"",Password:"",DOB:"",Gender:""}
+  constructor( private router:Router ){
   }
 Onclick(){
-  this.connect.detail=this.studentdetails;
-  this.router.navigateByUrl('Submit')
-  console.log("=============",this.studentdetails);
+  // this.connect.detail=this.studentdetails;
+  this.router.navigateByUrl('Signin')
+  // console.log("=============",this.studentdetails);
+}
+Onclick1(){
+  this.router.navigateByUrl('View')
 }
 }

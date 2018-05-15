@@ -2,11 +2,15 @@ import { NgModule } from '@angular/core';
 import {RouterModule, Routes, Router} from '@angular/router';
 import { CommonModule } from '@angular/common';
 import {StudentsubmitComponent} from './studentsubmit/studentsubmit.component';
-
+import {StudentinputComponent} from './studentinput/studentinput.component';
 const routes: Routes = [
-  {path:"", redirectTo:"",pathMatch:"full"},
+  // {path:"", redirectTo:"",pathMatch:"full"},
   {
-    path:'Submit',
+    path:'Signin',
+    component:StudentinputComponent
+  },
+  {
+    path:'View',
     component:StudentsubmitComponent
   }
 ]

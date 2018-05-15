@@ -12,12 +12,14 @@ import { StudentsubmitComponent } from './studentsubmit/studentsubmit.component'
 import { FormsModule } from '@angular/forms';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations'
 import { RouterModule } from '@angular/router';
-import {StorageServiceModule} from 'angular-webstorage-service'
+import {StorageServiceModule} from 'angular-webstorage-service';
+import { StudentinputComponent } from './studentinput/studentinput.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     StudentsubmitComponent,
+    StudentinputComponent,
   ],
   imports: [
     BrowserModule,

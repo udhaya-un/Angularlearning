@@ -10,20 +10,15 @@ import { DataSource } from '@angular/cdk/table';
 })
 export class StudentsubmitComponent implements OnInit {
   displayedColumns = ['LastName','FirstName','Mail','Password']
-
+  views : any=[];
   // @ViewChild(MatSort) sort: MatSort;
-  public view:any;
-  constructor(private connect:StoreService) { 
-    
+  constructor(private myservice:StoreService) { 
   }
-  public views: view[] = [];
-  DataSource = new MatTableDataSource(this.views);
+  DataSource = new MatTableDataSource(this.myservice.detail);
   ngOnInit(  ) {
-    this.view=this.connect.detail;
-    this.views.push(this.view);
-    localStorage.viewdata=JSON.stringify(this.views)
     console.log("asdjksdsajdh",DataSource);
-    console.log("kuasfiasgfjcbxj",this.views);
+    console.log("Com BBBB-------- > ",this.myservice.detail);
+    this.views =this.myservice.detail;
   }
 }
 interface view{
