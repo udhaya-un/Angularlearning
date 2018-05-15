@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Student Management
+  </h1>
+</div>
+<mat-card class="example-card">
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="FirstName" [ngModelOptions]="{standalone: true}" [(ngModel)]="studentdetails.FirstName">
+  </mat-form-field>
+  <br/>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="LastName" [ngModelOptions]="{standalone: true}" [(ngModel)]="studentdetails.LastName">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="mailid" [ngModelOptions]="{standalone: true}" [(ngModel)]="studentdetails.mailid">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input matInput type="password" placeholder="Password" [ngModelOptions]="{standalone: true}" [(ngModel)]="studentdetails.Password">
+  </mat-form-field>
+</form>
+<br/>
+<br/>
+<button (click)=Onclick() value=submit mat-raised-button color="primary">Submit</button>
+<router-outlet></router-outlet>
+</mat-card>
