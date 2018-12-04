@@ -40,8 +40,14 @@ For the creating a nexus repo for node project we need to create three nexus rep
   
   Once that is done you can go back to the create repo select the **npm host** and give a name for that and select the blob store which you have created for this repo and select the deployment policy as Allow redeploy and select the create repo button and your repository will be created. The npm host is like a private repo where you store your own dependencies in there.
   
- Once you have create npm hosted repository you need to create two more which are **npm proxy and npm group**. The npm proxy repo is used to proxy all the npm dependencies which you have downloaded from the npm registry and next when you download that it will be cached to this npm proxy repo.
+ Once you have create npm hosted repository you need to create two more which are **npm proxy and npm group**. 
+ 
+The npm proxy repo is used to proxy all the npm dependencies which you have downloaded from the npm registry and next when you download that it will be cached to this npm proxy repo.
  
  The npm group is used to group all the above repo and post in the a single url to download and for deployment purpose.
  
- For 
+ For npm proxy we need to create blob store for that corressponding repo name. And create a npm proxy repo by selecting the blob store which you have created for this npm proxy repo and also we need to give this link [http://registry.npmjs.org/] in the Proxy text box and then save it.
+ 
+ For npm group first we need to create blob store for that corressponding repo name. And create a npm group repo by selecting the blob store name which we have created for this repo. In npm group we will see a list of the other repo which we need to add to the Members box so that all the other will come under the npm group which will generate a single url for those and we can use them for downloading the packages and for deployment.
+ 
+ 
