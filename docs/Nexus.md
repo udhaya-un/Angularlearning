@@ -57,15 +57,7 @@ For the creating a nexus repo for node project we need to create three nexus rep
   
   Once that is done you can go back to the create repo select the **npm host** and give a name for that and select the blob store which you have created for this repo and select the deployment policy as Allow redeploy and select the create repo button and your repository will be created. The npm host is like a private repo where you store your own dependencies in there.
   
-  ![repo1](https://github.com/KishanRavindran/Angularlearning-app/blob/master/docs/Selection_058.png?raw=true"repo1")
-  
-  ![repo2](https://github.com/KishanRavindran/Angularlearning-app/blob/master/docs/Selection_059.png?raw=true"repo2")
-  
   ![repo3](https://github.com/KishanRavindran/Angularlearning-app/blob/master/docs/Selection_060.png?raw=true"repo3")
-  
-  ![repo4](https://github.com/KishanRavindran/Angularlearning-app/blob/master/docs/Selection_061.png?raw=true"repo4")
-  
-  ![repo5](https://github.com/KishanRavindran/Angularlearning-app/blob/master/docs/Selection_062.png?raw=true"repo5")
   
  Once you have create npm hosted repository you need to create two more which are **npm proxy and npm group**. 
  
@@ -75,6 +67,13 @@ The npm proxy repo is used to proxy all the npm dependencies which you have down
  
  For npm proxy we need to create blob store for that corressponding repo name. And create a npm proxy repo by selecting the blob store which you have created for this npm proxy repo and also we need to give this link [http://registry.npmjs.org/] in the Proxy text box and then save it.
  
+  ![repo1](https://github.com/KishanRavindran/Angularlearning-app/blob/master/docs/Selection_058.png?raw=true"repo1")
+  
+  ![repo2](https://github.com/KishanRavindran/Angularlearning-app/blob/master/docs/Selection_059.png?raw=true"repo2")
+  
+ 
  For npm group first we need to create blob store for that corressponding repo name. And create a npm group repo by selecting the blob store name which we have created for this repo. In npm group we will see a list of the other repo which we need to add to the Members box so that all the other will come under the npm group which will generate a single url for those and we can use them for downloading the packages and for deployment.
  
- 
+  ![repo4](https://github.com/KishanRavindran/Angularlearning-app/blob/master/docs/Selection_061.png?raw=true"repo4")
+  
+  ![repo5](https://github.com/KishanRavindran/Angularlearning-app/blob/master/docs/Selection_062.png?raw=true"repo5")
