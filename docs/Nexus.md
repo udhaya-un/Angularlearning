@@ -77,3 +77,30 @@ The npm proxy repo is used to proxy all the npm dependencies which you have down
   ![repo4](https://github.com/KishanRavindran/Angularlearning-app/blob/master/docs/Selection_061.png?raw=true"repo4")
   
   ![repo5](https://github.com/KishanRavindran/Angularlearning-app/blob/master/docs/Selection_062.png?raw=true"repo5")
+  
+  
+  Once you have done these you need to create a .npmrc file and put the below code inside in the registry you have give the link of the npm group and add the auth token to it.
+  
+      registry=http://localhost:8081/repository/npm-group/
+      #registry =https://registry.npmjs.org/
+      
+      email=anymailid
+      _auth=YWRtaW46YWRtaW4xMjM=
+      
+      to get the aut value 
+      echo -n 'admin:admin123' | openssl base64
+      will give the auth token value
+
+  After this you have add the below line inside the package.json file
+ 
+     "publishConfig": {
+       "registry": "http://locahost:8081/repository/npm-private/"
+     }
+     
+ Then you open the project path in the terminal and give **npm publish** you will see that the package has been added. 
+ 
+ Once you have given npm publish you can go look into the nexus repository and you will that package has been added.
+ 
+ ![publish](https://github.com/KishanRavindran/Angularlearning-app/blob/master/docs/Selection_064.png?raw=true"publish")
+ 
+ 
