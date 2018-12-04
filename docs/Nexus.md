@@ -19,13 +19,13 @@
  
     docker ps -a
   
-  [container](https://github.com/KishanRavindran/Angularlearning-app/blob/master/docs/Selection_047.png?raw=true"container")
+  ![container](https://github.com/KishanRavindran/Angularlearning-app/blob/master/docs/Selection_047.png?raw=true"container")
   
   which will list out all the container running and you can view the nexus container and its port. Once that is done open the browser and give 
     
     localhost:8081
     
-   [browser](https://github.com/KishanRavindran/Angularlearning-app/blob/master/docs/Selection_048.png?raw=true"browser") 
+   ![browser](https://github.com/KishanRavindran/Angularlearning-app/blob/master/docs/Selection_048.png?raw=true"browser") 
    
 Its sometime to load once that is done you will see the Nexus Repository Manager page in your browser.
 
@@ -38,7 +38,7 @@ For the creating a nexus repo for node project we need to create three nexus rep
    - npm proxy
    - npm group
    
-  [nexusrepo](https://github.com/KishanRavindran/Angularlearning-app/blob/master/docs/Selection_050.png?raw=true"nexusrepo")
+  ![nexusrepo](https://github.com/KishanRavindran/Angularlearning-app/blob/master/docs/Selection_050.png?raw=true"nexusrepo")
   
   To create new repo select the create repository button and it will show a list of packages. For my purpose i am going to choose npm packages. Before we select the npm packages we need to create a blob store for each of the packages which we are going to create. Here i have already created repos and blob store for my node project.
   
