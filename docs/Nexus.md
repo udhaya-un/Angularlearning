@@ -42,9 +42,18 @@ For the creating a nexus repo for node project we need to create three nexus rep
   
   To create new repo select the create repository button and it will show a list of packages. For my purpose i am going to choose npm packages. Before we select the npm packages we need to create a blob store for each of the packages which we are going to create. Here i have already created repos and blob store for my node project.
   
-  
+  ![previous](https://github.com/KishanRavindran/Angularlearning-app/blob/master/docs/Selection_063.png?raw=true"previous")
   
   So here we are going to create a **Blob store** by selecting the create blob store button. By selecting that we need to choose what type of file you need like S3 bucket or normal file(choose relevant file you need) and create a new **Name** corressonding repo which you are going to create once that is done and create the blob store. 
+  
+  ![blobstore](https://github.com/KishanRavindran/Angularlearning-app/blob/master/docs/Selection_052.png?raw=true"blobstore")
+  
+  ![blobstore2](https://github.com/KishanRavindran/Angularlearning-app/blob/master/docs/Selection_053.png?raw=true"blobstore2")
+  
+  ![blobstore3](https://github.com/KishanRavindran/Angularlearning-app/blob/master/docs/Selection_055.png?raw=true"blobstore3")
+  
+  ![blobstore4](https://github.com/KishanRavindran/Angularlearning-app/blob/master/docs/Selection_056.png?raw=true"blobstore4")
+  
   
   Once that is done you can go back to the create repo select the **npm host** and give a name for that and select the blob store which you have created for this repo and select the deployment policy as Allow redeploy and select the create repo button and your repository will be created. The npm host is like a private repo where you store your own dependencies in there.
   
