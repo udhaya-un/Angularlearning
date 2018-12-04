@@ -103,4 +103,6 @@ The npm proxy repo is used to proxy all the npm dependencies which you have down
  
  ![publish](https://github.com/KishanRavindran/Angularlearning-app/blob/master/docs/Selection_064.png?raw=true"publish")
  
- 
+  Once you have selected the package you will see the below screen and in there you will see a path which upon clicked will get downloaded to your system with the package which you have added in the package.json file.
+  
+  ![packages](https://github.com/KishanRavindran/Angularlearning-app/blob/master/docs/Selection_065.png?raw=true"packages")
