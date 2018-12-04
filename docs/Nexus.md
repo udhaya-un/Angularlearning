@@ -30,9 +30,9 @@ The default login credentials are admin/admin123 to sign in. Once you have logge
 ### Create New Repository:<br/>
 For the creating a nexus repo for node project we need to create three nexus repo which are 
    
-   -npm hosted
-   -npm proxy
-   -npm group
+   - npm hosted
+   - npm proxy
+   - npm group
    
   To create new repo select the create repository button and it will show a list of packages. For my purpose i am going to choose npm packages. Before we select the npm packages we need to create a blob store for each of the packages which we are going to create.
   
