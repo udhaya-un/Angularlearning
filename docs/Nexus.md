@@ -114,11 +114,11 @@ The npm proxy repo is used to proxy all the npm dependencies which you have down
   ![packages](https://github.com/KishanRavindran/Angularlearning-app/blob/master/docs/Selection_065.png?raw=true"packages")
   
   
- # Docker File:<br/>
+# Docker File:<br/>
    
          FROM sonatype/nexus3
          
- # Docker Compose File:<br/>
+# Docker Compose File:<br/>
  
       version: "3"
 
