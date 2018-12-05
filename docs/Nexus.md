@@ -112,3 +112,25 @@ The npm proxy repo is used to proxy all the npm dependencies which you have down
   Once you have selected the package you will see the below screen and in there you will see a path which upon clicked will get downloaded to your system with the package which you have added in the package.json file.
   
   ![packages](https://github.com/KishanRavindran/Angularlearning-app/blob/master/docs/Selection_065.png?raw=true"packages")
+  
+  
+ # Docker File:<br/>
+   
+         FROM sonatype/nexus3
+         
+ # Docker Compose File:<br/>
+ 
+      version: "3"
+
+            services:
+                  nexus:
+                     build: .
+                     image: sonatype/nexus3
+                     volumes:
+                        - nexus-data:/nexus-data
+                     ports:
+                        - "8081:8081"
+                     container_name: nexus
+       
+            volumes:
+                 nexus-data: {}
