@@ -4,10 +4,10 @@
    In here we will see how to containerize nexus in Docker.
    
 # Content
-1. [Prerequisites](prerequisites)
-1. [Nexus Installation](nexus-installation)
-1. [Docker File](docker-file)
-1. [Docker Compose File](docker-compose-file)
+1. [Prerequisites](#prerequisites)
+1. [Nexus Installation](#nexus-installation)
+1. [Docker File](#docker-file)
+1. [Docker Compose File](#docker-compose-file)
    
 # Prerequisites<br/> 
   [Install docker](https://docs.docker.com/install/)
