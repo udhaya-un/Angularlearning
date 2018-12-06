@@ -6,9 +6,8 @@
 # Content
 1. [Prerequisites](#prerequisites)
 1. [Nexus Installation](#nexus-installation)
-1. [Docker File](#docker-file)
-1. [Docker Compose File](#docker-compose-file)
-   
+1. [DockerFile](https://github.com/KishanRavindran/Angularlearning/blob/master/docs/Dockerfile) 
+1. [DockerCompose File](https://github.com/KishanRavindran/Angularlearning/blob/master/docs/docker-compose.yml)
 # Prerequisites<br/> 
   [Install docker](https://docs.docker.com/install/)
   
